@@ -1,0 +1,194 @@
+.header-container {
+  background-color: rgb(37, 37, 37);
+  align-items: center;
+  background-position: center top;
+  height: 100%;
+}
+
+/* Nav start */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.nav-logo {
+  color: orange;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.nav-home,
+.nav-about-me,
+.nav-projects,
+.nav-testimonial {
+  color: white;
+  letter-spacing: 1px;
+}
+
+.nav-download-cv {
+  background-color: orange;
+  margin: 2px 0px;
+  border-bottom: 10px;
+  padding: 2px;
+}
+
+.nav-download-cv h3 {
+  color: white;
+  letter-spacing: 1px;
+  width: fit-content;
+  margin: 15px 10px;
+}
+
+/* banner start */
+
+.banner-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: space-between;
+  width: 100%;
+  padding: 20px 0px;
+  margin: 20px;
+}
+
+.banner-content {
+  flex: 1;
+  min-width: fit-content;
+}
+
+.banner-container h1 {
+  font-size: 50px;
+  margin: 0px;
+  padding: 2px;
+}
+.banner-me-name {
+  font-size: 60px;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.banner-designer-type {
+  color: white;
+  display: flex;
+  gap: 5px;
+  padding: 2px 2px;
+  font-size: 60px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.size-4 {
+  color: #fd853a;
+  width: 90px;
+  height: 60px;
+  gap: 100px;
+}
+
+.banner-designer-place {
+  display: flex;
+  gap: 5px;
+}
+
+.banner-brirf-bio p {
+  color: white;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.33px;
+  letter-spacing: 0.03em;
+  text-align: justified;
+}
+
+.banner-brirf-bio-extra {
+  color: white;
+  display: flex;
+  text-transform: uppercase;
+  gap: 20px;
+}
+
+.banner-brirf-bio-extra img {
+  width: 20px;
+  height: 40px;
+}
+
+.portfolio-hireme {
+  background-color: rgb(76, 71, 71);
+  color: white;
+  display: flex;
+  gap: 20px;
+  border-radius: 50px;
+  padding: 10px;
+  margin-left: 0px;
+  margin-right: 900px;
+  justify-items: left;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  width: fit-content;
+}
+
+.portfolio {
+  background-color: #fd853a;
+  display: flex;
+  gap: 10px;
+  border-radius: 25px;
+  padding: 0px 20px;
+}
+.check-icon {
+  width: 25px;
+  height: 50px;
+}
+
+.fb-ig-twit-linked {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  height: 60px;
+  width: 60px;
+}
+
+.picture {
+  /* justify-items: auto; */
+  /* flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-logo,
+  .nav-home,
+  .nav-about-me,
+  .nav-projects,
+  .nav-testimonial,
+  .nav-download-cv {
+    margin-bottom: 10px;
+  }
+
+  .nav-download-cv {
+    align-self: stretch;
+  }
+
+  .fb-ig-twit-linked {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .picture {
+    width: 100%;
+  }
+}

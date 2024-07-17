@@ -1,0 +1,302 @@
+.about-container {
+  display: flex;
+  color: var(--font-primary-color);
+  width: 100%;
+  padding: 20px 0px;
+  gap: 800px;
+  justify-content: center;
+}
+
+.about-me h1 {
+  font-family: Rubik;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 47.4px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.about-me p {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.33px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgb(232, 232, 232);
+}
+
+/* .about-experience {
+  gap: 10px;
+} */
+
+.star-img {
+  gap: 1px;
+  margin-left: 43px;
+  font-size: 0px;
+  text-align: right;
+}
+
+/* .experience-year {
+gap: 2px;
+} */
+
+.experience-year h1 {
+  font-family: Rubik;
+  font-size: 47px;
+  /* font-weight: 700;
+  line-height: 47px; */
+  letter-spacing: -0.015em;
+  text-align: left;
+}
+.experience-year p {
+  font-family: Rubik;
+  font-size: 20px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+
+.my-experience {
+  background-color: rgba(184, 106, 223, 0.1);
+  color: var(--font-primary-color);
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 68px 191px;
+}
+
+.my-experience-desc {
+  text-align: left;
+  padding-top: 60px;
+}
+
+.my-experience-list {
+  text-align: right;
+}
+
+.exp-01,
+.exp-02,
+.exp-03 {
+  border-bottom: 0.5px solid rgb(216, 216, 216);
+}
+
+.exp-01-period-com,
+.exp-02-period-com,
+.exp-03-period-com {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.exp-01-period-com h4,
+.exp-02-period-com h4,
+.exp-03-period-com h4 {
+  text-align: left;
+}
+
+.exp-01-period-com h4,
+.exp-02-period-com h4,
+.exp-03-period-com h4 {
+  text-align: right;
+}
+
+.exp-01-sector,
+.exp-02-sector,
+.exp-03-sector {
+  text-align: left;
+}
+
+/* Award */
+
+.award-section {
+  color: var(--font-primary-color);
+  text-align: center;
+}
+
+.award-title {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 144px;
+  margin-bottom: 40px;
+}
+
+.award-title p {
+  color: rgb(178, 178, 178);
+}
+
+.award-desc-1,
+.award-desc-2 {
+  background-color: black;
+  margin: 40px 170px;
+  padding: 50px;
+  font-size: 20px;
+}
+
+.award-desc-1-name-year,
+.award-desc-2-name-year {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: space-evenly;
+}
+
+.award-desc-1-givenBy p,
+.award-desc-2-givenBy p {
+  font-size: 20px;
+  color: rgb(178, 178, 178);
+  padding: 0px 235px;
+}
+
+/* My portfolio */
+
+.my-portfolio {
+  color: var(--font-primary-color);
+}
+
+.my-portfolio-title {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 144px;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+.my-portfolio-title p {
+  color: rgb(178, 178, 178);
+}
+
+.my-portfolio-title-list {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 400px;
+  font-size: 30px;
+}
+
+.my-portfolio-ui,
+.my-portfolio-app-design,
+.my-portfolio-grapric-design {
+  background-color: black;
+  font-size: 30px;
+  margin: 0px 30px;
+  padding: 0px 23px;
+  text-align: center;
+  justify-content: center;
+}
+
+.my-portfolio-web-design {
+  background-color: orangered;
+  font-size: 30px;
+  margin: 0px 30px;
+  padding: 0px 23px;
+  text-align: center;
+  justify-content: center;
+}
+
+.my-portfolio-website-1 {
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+  margin: 35px 0px;
+}
+
+.my-portfolio-website-1-detaits {
+  text-align: center;
+  font-size: 25px;
+  margin: 20px 0px;
+}
+
+/*  Contact */
+
+.contact {
+  color: var(--font-primary-color);
+  margin: 0px 100px;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 190px;
+}
+
+.contact-desc {
+  background-color: #fd6f001a;
+  text-align: center;
+  margin: 45px 150px;
+  font-size: 30px;
+  padding: 30px 60px;
+}
+.name-email {
+  display: flex;
+  justify-content: space-between;
+  /* text-align: center; */
+}
+
+.any-project,
+.name,
+.msge,
+.attach-file,
+.submit-button {
+  text-align: left;
+}
+
+.name {
+  border-bottom: 0.5px solid rgb(216, 216, 216);
+}
+
+.email {
+  font-size: 20px;
+  border-bottom: 0.5px solid rgb(216, 216, 216);
+}
+
+.msge {
+  border-bottom: 0.5px solid rgb(216, 216, 216);
+}
+
+.attach-file {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.submit-button {
+  background-color: orange;
+  margin-right: 1180px;
+  padding: 0px 20px;
+}
+
+/* Last part */
+
+.last-part {
+  background-color: black;
+  color: var(--font-primary-color);
+  font-size: 40px;
+  padding: 65px 300px;
+}
+
+.LOGO {
+  text-align: center;
+  font-size: 35px;
+}
+
+.items {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 45px;
+}
+
+.right-reserved {
+  color: var(--font-primary-color);
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 20px 5px;
+  font-size: 20px;
+}
