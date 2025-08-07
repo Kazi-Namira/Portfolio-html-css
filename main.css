@@ -1,59 +1,56 @@
 .about-container {
   display: flex;
-  color: var(--font-primary-color);
-  width: 100%;
-  padding: 20px 0px;
-  gap: 800px;
-  justify-content: center;
+  align-items: center; /* vertical alignment */
+  justify-content: space-between;
+  padding-top: 200px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  gap: 30rem; /* flexible spacing */
+}
+
+.about-me {
+  flex: 2;
 }
 
 .about-me h1 {
-  font-family: Rubik;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 800;
-  line-height: 47.4px;
-  letter-spacing: 1px;
-  text-align: left;
+  margin-bottom: 1rem;
+  color: var(--font-primary-color);
 }
 
 .about-me p {
-  font-family: Rubik;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21.33px;
-  letter-spacing: 0.03em;
-  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
   color: rgb(232, 232, 232);
 }
 
-/* .about-experience {
-  gap: 10px;
-} */
+.about-experience {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-direction: column; /* stack on small screens */
+}
 
 .star-img {
-  gap: 1px;
-  margin-left: 43px;
-  font-size: 0px;
-  text-align: right;
+  display: flex;
+  gap: 0.25rem;
 }
-
-/* .experience-year {
-gap: 2px;
-} */
 
 .experience-year h1 {
-  font-family: Rubik;
-  font-size: 47px;
-  /* font-weight: 700;
-  line-height: 47px; */
-  letter-spacing: -0.015em;
-  text-align: left;
+  font-size: 3rem;
+  margin: 0;
+  color: var(--font-primary-color);
 }
+
 .experience-year p {
-  font-family: Rubik;
-  font-size: 20px;
-  letter-spacing: 0px;
-  text-align: right;
+  font-size: 1.25rem;
+  margin: 0;
+  color: rgb(232, 232, 232);
 }
 
 .my-experience {
@@ -62,48 +59,58 @@ gap: 2px;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
-  padding: 68px 191px;
+  padding: 100px 120px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .my-experience-desc {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 40px;
   text-align: left;
-  padding-top: 60px;
+  padding: 10px;
+  font: size 20px;
 }
 
 .my-experience-list {
-  text-align: right;
+  flex: 1;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
 }
 
 .exp-01,
 .exp-02,
 .exp-03 {
   border-bottom: 0.5px solid rgb(216, 216, 216);
+  padding-bottom: 0px;
+  /* margin-bottom: 20px; */
 }
 
 .exp-01-period-com,
 .exp-02-period-com,
 .exp-03-period-com {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 100px;
-}
-
-.exp-01-period-com h4,
-.exp-02-period-com h4,
-.exp-03-period-com h4 {
-  text-align: left;
-}
-
-.exp-01-period-com h4,
-.exp-02-period-com h4,
-.exp-03-period-com h4 {
-  text-align: right;
 }
 
 .exp-01-sector,
 .exp-02-sector,
 .exp-03-sector {
   text-align: left;
+  padding: 0px;
+  margin: 0;
+  line-height: 1.2;
+}
+.exp-01-sector h3,
+.exp-02-sector h3,
+.exp-03-sector h3 {
+  font-size: 18px; /* slightly smaller font */
+  margin: 0; /* removes default h3 margin */
+  padding-bottom: 2px;
 }
 
 /* Award */
@@ -144,7 +151,7 @@ gap: 2px;
 .award-desc-2-givenBy p {
   font-size: 20px;
   color: rgb(178, 178, 178);
-  padding: 0px 235px;
+  padding: 0px 0px;
 }
 
 /* My portfolio */
@@ -168,14 +175,17 @@ gap: 2px;
 .my-portfolio-title-list {
   color: white;
   display: flex;
-  justify-content: space-around;
-  padding: 0px 400px;
-  font-size: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  font-size: 1.5rem;
 }
 
 .my-portfolio-ui,
 .my-portfolio-app-design,
-.my-portfolio-grapric-design {
+.my-portfolio-graphic-design {
   background-color: black;
   font-size: 30px;
   margin: 0px 30px;
@@ -200,10 +210,14 @@ gap: 2px;
   margin: 35px 0px;
 }
 
-.my-portfolio-website-1-detaits {
-  text-align: center;
-  font-size: 25px;
-  margin: 20px 0px;
+.my-portfolio-website-1 {
+  position: relative;
+  padding-left: 60px; /* Give space for the button */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 
 /*  Contact */
@@ -211,6 +225,7 @@ gap: 2px;
 .contact {
   color: var(--font-primary-color);
   margin: 0px 100px;
+  padding: 2rem 1rem;
 }
 
 .contact-title {
@@ -221,48 +236,52 @@ gap: 2px;
 
 .contact-desc {
   background-color: #fd6f001a;
+  padding: 2rem;
+  font-size: 1.5rem;
+  margin: 2rem auto;
   text-align: center;
-  margin: 45px 150px;
-  font-size: 30px;
-  padding: 30px 60px;
+  max-width: 800px;
 }
 .name-email {
   display: flex;
-  justify-content: space-between;
-  /* text-align: center; */
+
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-.any-project,
 .name,
-.msge,
-.attach-file,
-.submit-button {
-  text-align: left;
-}
-
-.name {
-  border-bottom: 0.5px solid rgb(216, 216, 216);
-}
-
-.email {
-  font-size: 20px;
-  border-bottom: 0.5px solid rgb(216, 216, 216);
-}
-
+.email,
 .msge {
-  border-bottom: 0.5px solid rgb(216, 216, 216);
+  flex: 1 1 100%;
+  border-bottom: 0.5px solid #d8d8d8;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  text-align: left;
 }
 
 .attach-file {
   display: flex;
+  text-align: left;
   align-items: center;
-  margin: 10px 0px;
+  gap: 1rem;
+  font-size: 1rem;
+  margin: 1rem 0;
 }
 
 .submit-button {
   background-color: orange;
-  margin-right: 1180px;
-  padding: 0px 20px;
+  color: white;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  /* ALIGN LEFT INSIDE CONTAINER */
+  display: inline-block;
+  margin: 10px 0;
 }
 
 /* Last part */
@@ -283,6 +302,8 @@ gap: 2px;
   display: flex;
   text-align: center;
   justify-content: space-between;
+  gap: 10px;
+  font-size: 18px;
 }
 
 .socials {
