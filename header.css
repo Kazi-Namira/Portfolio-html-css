@@ -9,108 +9,135 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.nav-logo {
-  color: orange;
+/* Logo */
+.nav-logo h2 {
+  /* color: orange; */
+  color: var(--orange);
   font-weight: 900;
   letter-spacing: 1px;
+  margin: 0;
 }
 
-.nav-home,
-.nav-about-me,
-.nav-projects,
-.nav-testimonial {
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
   color: white;
-  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
 }
 
+.nav-links a:hover {
+  color: orange;
+}
+
+/* Download CV button */
 .nav-download-cv {
-  background-color: orange;
-  margin: 2px 0px;
-  border-bottom: 10px;
-  padding: 2px;
-}
-
-.nav-download-cv h3 {
+  background-color: var(--orange);
   color: white;
-  letter-spacing: 1px;
-  width: fit-content;
-  margin: 15px 10px;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* banner start */
 
 .banner-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
   align-items: center;
-  justify-items: space-between;
+  justify-content: space-between;
   width: 100%;
-  padding: 20px 0px;
-  margin: 20px;
+  padding: 20px 40px;
+  margin: 20px 0;
+  gap: 40px;
 }
 
 .banner-content {
-  flex: 1;
-  min-width: fit-content;
+  flex: 1 1 500px;
+  min-width: 300px;
+  color: white;
 }
 
 .banner-container h1 {
   font-size: 50px;
-  margin: 0px;
-  padding: 2px;
+  margin: 0;
+  padding: 2px 0;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
+
 .banner-me-name {
   font-size: 60px;
-  color: white;
-  font-weight: bolder;
+  font-weight: 900;
   letter-spacing: 2px;
 }
 
 .banner-designer-type {
-  color: white;
   display: flex;
-  gap: 5px;
-  padding: 2px 2px;
+  align-items: center;
+  gap: 10px;
   font-size: 60px;
-  font-weight: bolder;
+  font-weight: 700;
   letter-spacing: 2px;
+  color: white;
 }
 
 .size-4 {
   color: #fd853a;
-  width: 90px;
+  width: 60px;
   height: 60px;
-  gap: 100px;
 }
 
 .banner-designer-place {
   display: flex;
-  gap: 5px;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
-.banner-brirf-bio p {
-  color: white;
-  font-family: Rubik;
+.banner-designer-place h1:last-child {
+  color: #fd853a;
+}
+
+.banner-brief-bio p {
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 21.33px;
+  line-height: 1.4;
   letter-spacing: 0.03em;
-  text-align: justified;
+  text-align: justify;
+  margin-top: 20px;
 }
 
-.banner-brirf-bio-extra {
-  color: white;
+.banner-brief-bio-extra {
   display: flex;
-  text-transform: uppercase;
+  align-items: center;
   gap: 20px;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
 }
 
-.banner-brirf-bio-extra img {
+.banner-brief-bio-extra img {
   width: 20px;
-  height: 40px;
+  height: 20px;
 }
 
 .portfolio-hireme {
@@ -119,44 +146,58 @@
   display: flex;
   gap: 20px;
   border-radius: 50px;
-  padding: 10px;
-  margin-left: 0px;
-  margin-right: 900px;
-  justify-items: left;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  padding: 10px 20px;
+  margin-top: 30px;
+  border: 1px solid white;
   width: fit-content;
+  cursor: pointer;
+  user-select: none;
 }
 
 .portfolio {
   background-color: #fd853a;
   display: flex;
+  align-items: center;
   gap: 10px;
   border-radius: 25px;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
+
 .check-icon {
   width: 25px;
-  height: 50px;
+  height: 25px;
+  stroke-width: 2;
 }
 
 .fb-ig-twit-linked {
   display: flex;
   gap: 20px;
-  padding: 10px;
-  height: 60px;
-  width: 60px;
+  margin-top: 40px;
+}
+
+.fb-ig-twit-linked div img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.fb-ig-twit-linked div img:hover {
+  transform: scale(1.1);
 }
 
 .picture {
-  /* justify-items: auto; */
-  /* flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-  max-width: 100%;
+  width: 410px;
+  height: 410px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.picture img {
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+  transform: scale(1.5);
 }
 
 @media only screen and (min-width: 200px) and (max-width: 576px) {
